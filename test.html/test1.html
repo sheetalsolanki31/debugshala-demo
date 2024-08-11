@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 1. Find the odd number and print, between 1 to 100 using JavaScript(using Loop)?
+for(let i=1;i<=100;i++){
+    if(i%2==1){
+        document.write( " " + i );
+    }
+}
+
+
+// 2. Write a JavaScript program that take input marks using prompt then find the 
+// corresponding grade.
+//  like :- user typed |
+//  The grades are computed as follows :
+//  Range Grade
+//  <60 F
+//  <70 D
+//  <80 C
+//  <90 B
+//  <100 A
+
+let marks = prompt("enter your marks");
+if(marks >= 90 && marks <= 100){
+document.write(" grade is A");
+}else if(marks >= 80 && marks < 90){
+document.write("grade is B");
+}else if(marks >= 70 && marks < 80 ){
+document.write("grade is C");
+}else if(marks >= 60 && marks < 70){
+document.write("grade is D");
+}else if(marks >= 0 && marks < 60){
+document.write("grade is F");
+}else {
+document.write("grade is not define");
+}
+
+
+
+4. Write a program using JavaScript , convert a given string to uppercase, 
+Lowercase and find the length of given string.
+let string=prompt("enter your string");
+document.write(string);
+
+
+
+
+
+5. Generate the first n Fibonacci numbers using a for loop, where value of n 
+taken from the user.
+ 
+
+6. Write a program using javaScript (Pattern).
+ 
+        *
+      * *
+    * * *
+  * * * *
+* * * * *   
+
+
+
+
+
+
+7. Check if a number is prime using a for loop, where the number is provided by 
+the user.
+let number=prompt("enter a number")
+for(let i=1;i<=number;i++){
+    if(number%2==1){
+       
+    }
+    
+}
+document.write(number + "is prime");
+
+
+10.Print the multiplication table of a number using a for loop, where the number
+is provided by the user
+let n=prompt("enter the number")
+for(let i=1;i<=10;i++ ){
+    document.write(n + "x" + i + "=" +  (n*i) + " " );
+} 
+
+
+9. Finding the maximum ,minimum and removing duplicate number in an array and 
+print.
+ let numbers = [1, 2, 3, 4, 5,6,1,3,7];
+
+let n=[1,2,3,4,5,6,1,3,7];
+let maxDigit = 0;
+for(let i=0;i<=length;i++){
+    if(n[i]>maxDigit){
+        maxDigit = n[i];
+    } 
+}
+document.write(maxDigit);
+
+
+8.Extract a substring from the 3rd to the 11th character of a string.
+let str = "JavaScriptIsMostPopularLanguage";
+
+let str = "JavaScriptIsMostPopularLanguage";
+let str2="";
+for(let i=2;i<=10;i++){
+   str2=str2+str[i];
+}
+document.write(str2);
+
+
+
+3. Calculate the factorial of a number using a for loop, where the number is 
+provided by the user.
+let n=prompt("enter the number");
+for(let i=n;i>=1;i--){ 
+    n*i;
+}
+document.write(n*i);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

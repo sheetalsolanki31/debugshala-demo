@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // <----------------ARITHMETIC------------------------------------>
+//         Addition: Write code for two numbers, adds them, and displays the result in browser.
+// Subtraction: Write code for two numbers, subtracts the second from the first, and displays the difference in browser.
+// Multiplication: Write code for two numbers, multiplies them, and displays the product in browser.
+// Division: Write code for two numbers, divides the first by the second (ensure the denominator is not zero), and displays the quotient. Handle potential division by zero errors with an appropriate message.
+// Modulo: Write code for two numbers, performs the modulo operation (remainder after division), and displays the result.
+
+    //     let a=2,b=5;
+    //     document.write("a+b ="+ (a+b));
+    //   document.write("</br>")
+    //  document.write("a-b ="+ (a-b));
+    //  document.write("</br>")
+    //  document.write("a*b ="+ (a*b));
+    //  document.write("</br>")
+    //  document.write("a/b ="+ (a/b));
+    //  document.write("</br>")
+    //  document.write("a%b ="+ (a%b));
+    //  document.write("</br>")
+
+
+    // <--------------------------COMPARISON---------------------->
+//     Comparison Operators (4):
+
+// Equality: Write code for two numbers and checks if they are equal. Display a message indicating whether they are equal or not in browser.
+// Inequality: Write code for two numbers and checks if they are not equal. Display a message indicating the result in browser.
+// Greater Than/Less Than: Write code for two numbers and checks if the first is greater than or less than the second. Display the appropriate message in browser.
+// Greater Than or Equal To/Less Than or Equal To: Write code for two numbers and checks if the first is greater than or equal to, or less than or equal to, the second. Display the appropriate message.
+// let a=4,b=9;
+//  document.write(a==b) 
+// document.write(a!=b)
+//  document.write(a>b)
+// document.write(a<b)
+// document.write(a>=b)
+// document.write(a<=b)
+
+// <-----------------logicoperators------------------->
+// AND: Write code for two numbers and checks if both are greater than 10. Use the && (AND) operator and display a message based on the result in browser.
+// OR: Write code for two numbers and checks if at least one of them is even. Use the || (OR) operator and display a message based on the result in browser.
+// NOT: Write code for a number and checks if it's negative. Use the ! (NOT) operator and display a message based on the result in browser.
+// // 
+
+
+
+
+// <---------------------------ASSIGNMENT OPERATOR------------>
+//     Simple Assignment: Write code that declares a variable x and assigns it the value 5. Then, print the value of x.
+// Addition Assignment: Write code that declares a variable y and assigns it the value 10. Then, add 5 to y using the += operator and print the updated value in browser.
+// Multiplication Assignment: Write code that declares a variable z and assigns it the value 3. Then, multiply z by 2 using the *= operator and print the updated value in browser.
+// let x=5;
+// document.write(x + "<br>");
+// let y=10;
+// y+=5;
+// document.write(y + "<br>");
+// let z=3;
+// z*=2;
+// document.write(z);
+
+// <---------------Ternary Operator(1):----------->
+
+// Ternary Operator: Write code for a number and checks if it's positive. Use the ternary operator to conditionally display "The number is positive" or "The number is non-positive."
+// let x=5;
+// document.write((5)?"number is positive":"number is negative")
+
+
+
+
+
+// <--------------------CONDITIONAL OPERATOR--------------------->
+//     Conditional Statements :- 
+// 1. Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:'You are old enough to drive' but if not 18 give another feedback stating to wait for the number of years he needs to turn 18.
+// example :-
+// Enter your age: 30
+// You are old enough to drive.
+
+// Enter your age:15
+// You are left with 3 years to drive.
+// let age=prompt("enter your age:");
+// if(age>=18){
+//     document.write('you are old enough to drive');
+// }
+// else{
+//     let yearleft=18-age;
+//     document.write("you are left with"   + yearleft +   " year to drive");
+
+// }
+
+
+// 2. Compare the values of myAge and yourAge using if … else. Based on the comparison and log the result to page using document.write() stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
+
+// Enter your age using prompt() : 30
+// You are 5 years older than me.
+
+// If age is greater than b return 'a is greater than b' else 'a is less than b'. Try to implement it in two ways if else or ternary operator
+
+// let myage=22;
+// let yourage= prompt("enter yourage");
+// if(myage > yourage){
+//     document.write("you are " + (myage-yourage) + " year younger than me" );
+// }else if(myage<yourage){
+//     document.write("you are " + (yourage-myage) + " year elder than me" );
+// }else{
+//     document.write("we have same age");
+// }
+
+
+
+// 3. using if else
+// ternary operator.
+//   let a = 4
+//   let b = 3
+//   4 is greater than 3
+
+// let a=4,b=3;
+// if(a>b){
+//     document.write("a is greater than b");
+// }else{
+//     document.write(" is less than b");
+// }
+
+
+
+// 4.Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript
+// let number=prompt("enter a number");
+// if(number%2==0){
+//     document.write("number is even");
+
+// }else {
+//     document.write("number is odd");
+// }
+
+
+// 5. Write a code which can give grades to students according to theirs scores in two ways using if else if ladder and switch case as well:
+// 80-100, A
+// 70-89, B
+// 60-69, C
+// 50-59, D
+// 0-49, F
+
+// let score=55;
+// let grade;
+// if(score>=80 &&  score<=100){
+//     document.write("grade is A");
+// }else if(score>=70 && score<=89){
+//     document.write("grade is B");
+
+// } else if (score>=60 && score<=69){
+//     document.write("grade is C");
+// } else if(score>=50 && score<=59){
+//     document.write("grade is D");
+
+// }else if(score>=0 && score<=49){
+//     document.write("grade is E");
+// }else{
+//     document.write("invalid score");
+// }
+
+
+
+// 6. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :using switch case 
+// September, October or November, the season is Autumn.
+// December, January or February, the season is Winter.
+// March, April or May, the season is Spring
+// June, July or August, the season is Summer
+
+
+// let month = "October"; // Example input
+// let season;
+
+// switch (month) {
+//     case "September":
+//     case "October":
+//     case "November":
+//         season = "Autumn";
+//         break;
+//     case "December":
+//     case "January":
+//     case "February":
+//         season = "Winter";
+//         break;
+//     case "March":
+//     case "April":
+//     case "May":
+//         season = "Spring";
+//         break;
+//     case "June":
+//     case "July":
+//     case "August":
+//         season = "Summer";
+//         break;
+//     default:
+//         season = "Unknown month";
+// }
+
+// document.write("The season for the month of " + month + " is: " + season);
+
+
+// 7. Check if a day is weekend day or a working day. Your script will take day as an input.using switch case and if else if ladder
+//     What is the day  today? Saturday
+//     Saturday is a weekend.
+
+//     What is the day today? saturDaY
+//     Saturday is a weekend.
+
+//     What is the day today? Friday
+//     Friday is a working day.
+
+//     What is the day today? FrIDAy
+//     Friday is a working day.
+
+// let day1=prompt("enter day");
+// let day2;
+// switch(day1){
+//     case "monday":
+//     case "tuesday": 
+//     case "wednesday":
+//     case "thursday":
+//     case "friday":
+//     day2 = "working days";
+//    break;
+//    case "saturday":
+//     case "sunday":
+//     day2 = "weekend days";
+//     break;
+//     default:
+//         day2 = "unknown day";
+
+// }
+// document.write("the" + day1 + day2);
+
+
+// 8. Write a program which tells the number of days in a month.
+//   Enter a month: January
+//   January has 31 days.
+
+//   Enter a month: JANUARY
+//   January has 31 day
+
+//   Enter a month: February
+//   February has 28 days.
+
+//   Enter a month: FEbruary
+//   February has 28 days.
+
+// let month=prompt("enter a month");
+// let days;
+//  switch(month){
+//     case "january":
+//     case "march":
+//     case "may":
+//     case "july":
+//     case "august":
+//     case "october":
+//     case "december":
+//         days = 31;
+//         break;
+//     case "april":
+//     case "june":
+//     case "september":
+//     case "november":
+//         days = 30 ;
+//         break;
+//     case "february":
+//         days = 28;
+//         break;
+//         default:
+//             days = "unknown days";
+
+
+   
+
+//  }
+//  document.write("the" + month +  "month has" + days + "days");
+
+
+
+// 9. Write a program which tells the number of days in a month, now consider leap year.
+// let month=prompt("enter a month");
+// let days;
+//  switch(month){
+//     case "january":
+//     case "march":
+//     case "may":
+//     case "july":
+//     case "august":
+//     case "october":
+//     case "december":
+//         days = 31;
+//         break;
+//     case "april":
+//     case "june":
+//     case "september":
+//     case "november":
+//         days = 30 ;
+//         break;
+//     case "february":
+//         days = 29;
+//         break;
+//         default:
+//             days = "unknown days";
+//  }
+// document.write("the" + month +  "month has" + days + "days");
+
+// 10.take two input from prompt and find area of rectangle and result shown in page.
+// let length=prompt("enter length");
+// let breadth=prompt("enter breadth");
+// let  area=(length*breadth);
+// document.write(area);
+
+// 11.Write a JavaScript program that take two number from prompt and find largest integer among two integers and print them.
+// let a=prompt("enter a number");
+// let b=prompt("enter second number");
+// if(a>b){
+//     document.write(a + "is largest integer");
+
+// }else{
+//     document.write(b + "is largest integer");
+// }
+   
+
+// 12.Write a JavaScript program that take input marks using prompt then find the corresponding grade.
+// like :- user typed |
+// The grades are computed as follows :
+
+// Range	Grade
+// <60	F
+// <70	D
+// <80	C
+// <90	B
+// <100	A
+
+let marks=prompt("enter your marks");
+let grade;
+if(marks>90 && marks<=100){
+ grade==A;
+}else if(marks>80 && marks<=90){
+ grade==B;
+}else if(marks>70 && marks<=80){
+ grade=C;
+}else if(marks>60 && marks<=70){
+ grade=D;
+}else if(marks<=60 ){
+ grade=F;
+}
+document.write(grade);//
+
+
+
+    </script>
+</body>
+</html>

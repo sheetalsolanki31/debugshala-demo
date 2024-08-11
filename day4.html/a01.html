@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+//   1.  Print all even numbers from 1 to 50 using a for loop.
+
+// 2. Calculate the sum of all numbers from 1 to n using a while loop, where n is provided by the user.
+
+// 3. Print the multiplication table of a number m using a for loop, where m is provided by the user.
+
+// 4.e largest digit in a given number using a while loop, where the number is provided by the user. Find th
+
+// 5. Reverse a number using a do...while loop, where the number is provided by the user.
+
+// ----------------------------------ans1---------------------------------
+
+// for(i=1;i<=50;i++){
+//     if(i%2==0){
+//         document.write(i + " ");
+//     }
+// }
+
+
+// ----------------------------------ans2---------------------------------
+
+// let n=prompt("enter the number");
+// let i=1;
+// let sum=0;
+// while(i<=n){
+//     sum += n;
+    
+// }
+// document.write("the sum of number is =" + sum );
+
+
+// ----------------------------------ans3---------------------------------
+
+// let number = prompt("enter the number");
+
+// for(let i = 1; i <= 10; i++){
+// document.write(number + "x" + i + "=" + " " + (number*i) + "  ");
+//    }
+   
+
+// ----------------------------------ans4---------------------------------
+
+// let num = prompt("enter a number");
+// let largestDigit = 0;
+// while(num > 0){
+//     let digit = num % 10;
+//     if(digit > largestDigit){
+//         largestDigit = digit;
+        
+//     }
+//     number = Math.floor(number / 10); 
+// }
+// document.write(largestDigit);
+
+
+
+
+// Assume the number is provided by the user
+let number = parseInt(prompt("Enter a number:"));
+let largestDigit = 0;
+
+while (number > 0) {
+    let digit = number % 10; // Get the last digit
+    if (digit > largestDigit) {
+        largestDigit = digit; // Update the largest digit if current digit is greater
+    }
+    number = Math.floor(number / 10); // Remove the last digit
+}
+
+// document.write("The largest digit is: " + largestDigit);
+
+
+
+
+
+//  -  </script>
+</body>
+</html>

@@ -285,7 +285,7 @@
 // 9. Write a program which tells the number of days in a month, now consider leap year.
 // let month=prompt("enter a month");
 // let days;
-//  switch(month){
+// //  switch(month){
 //     case "january":
 //     case "march":
 //     case "may":
@@ -337,20 +337,77 @@
 // <90	B
 // <100	A
 
-let marks=prompt("enter your marks");
-let grade;
-if(marks>90 && marks<=100){
- grade==A;
-}else if(marks>80 && marks<=90){
- grade==B;
-}else if(marks>70 && marks<=80){
- grade=C;
-}else if(marks>60 && marks<=70){
- grade=D;
-}else if(marks<=60 ){
- grade=F;
+// let marks=prompt("enter your marks");
+// let grade;
+// if(marks>90 && marks<=100){
+//  grade==A;
+// }else if(marks>80 && marks<=90){
+//  grade==B;
+// }else if(marks>70 && marks<=80){
+//  grade=C;
+// }else if(marks>60 && marks<=70){
+//  grade=D;
+// }else if(marks<=60 ){
+//  grade=F;
+// }
+// document.write(grade);//
+
+
+// 13.Write a Code to find a branch name Based on the student’s marks, this switch statement assigns a specific engineering branch to the variable Branch. The output displays the student’s branch name,
+// 90 > above  CS Branch
+// 80 > above Mechanical Branch
+// 70 > above Chemical enginnerring
+// 50 > Civil Engineering
+// default Bio technology
+let marks = prompt("enter your marks");
+let branch;
+switch(marks){
+    case marks >= 90 :
+        branch = "CS";
+        break;
+        case marks >= 80 :
+            branch = "Mechanical";
+            break;
+            case marks >= 70 :
+                branch = "Chemical";
+                break;
+                case marks >= 50 :
+                    branch = "Civil";
+                    break;
+                    default:
+                        branch  = "unknown branch";
+                                   
+
 }
-document.write(grade);//
+document.write("student has" + marks + branch );
+// let day = prompt("enter day");
+
+// switch(day) {
+//   case 1:
+//     console.log("Sunday");
+//     break;
+//   case 2:
+//     console.log("Monday");
+//     break;
+//   case 3:
+//     console.log("Tuesday");
+//     break;
+//   case 4:
+//     console.log("Wednesday");
+//     break;
+//   case 5:
+//     console.log("Thursday");
+//     break;
+//   case 6:
+//     console.log("Friday");
+//     break;
+//   case 7:
+//     console.log("Saturday");
+//     break;
+//   default:
+//     console.log("Invalid day");
+// }
+
 
 
 

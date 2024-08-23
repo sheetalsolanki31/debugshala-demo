@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     <!-- .1 Validate if a String Contains "ab"
+// Prompt: Enter a string to check if it contains "ab" (case-insensitive).
+// Expected Output: Displays true if "ab" is found, otherwise false. -->
+// <!-- solution= -->
+// let re = /ab/i;
+// let str=prompt("enter a string");
+// document.write(re.test(str));
+
+
+
+// 2. Check for Specific Product Code Format
+// Prompt: Enter a product code in the format "P" followed by two digits (e.g., P01, P99).
+// Expected Output: Displays true if the format is correct, otherwise false.
+// let re = /^P\d\d$/;
+// let str=prompt("enter a string");
+// document.write(re.test(str));
+
+
+
+
+// .3 Validate a Name Format (First Name Only)
+// Prompt: Enter a first name (should start with an uppercase letter followed by 1-10 lowercase letters).
+// Expected Output: Displays true if the name is in the correct format, otherwise false.
+// let re = /^[A-Z]{1}[a-z]{1,10}$/; 
+// let str=prompt("enter a string");
+// document.write(re.test(str));
+
+
+
+
+// 4. Validate Full Name (First Name and Last Name)
+// Prompt: Enter your full name (First and Last name should start with an uppercase letter).
+// Expected Output: Displays true if the format is correct (e.g., "Tarun Rathore"), otherwise false.
+// let re = /^[A-Z]{1}[a-z]{1,10}\s[A-Z]{1}[a-z]{3,10}$/;  
+// let str=prompt("enter a string");
+// document.write(re.test(str));
+
+
+
+
+// .5 Validate a UID (Alphabets, Digits, Underscore, Dot, Hyphen)
+// Prompt: Enter a UID (8-12 characters including letters, digits, underscores, dots, hyphens).
+// Expected Output: Displays true if the UID is valid, otherwise false.
+// let re = /^[\w\d.-]{8,12}$/
+// let uid=prompt("enter a uid");
+// document.write(re.test(uid));
+
+
+
+// .6 Validate a Mobile Number (10 Digits)
+// Prompt: Enter a 10-digit mobile number.
+// Expected Output: Displays true if the input is a valid 10-digit number, otherwise false.
+// let re = /^[\d]{10}$/;
+// let phonenumber=prompt("enter mobile number");
+// document.write(re.test(phonenumber));
+
+
+
+// 7. Validate an Email Address (Basic Pattern)
+// Prompt: Enter an email address in the format username@gmail.com.
+// Expected Output: Displays true if the email is valid, otherwise false
+// let re = /^[\w.#-]{5,}@gmail.com$/
+// let email=prompt("enter your email");
+// document.write(re.test(email));
+
+
+
+
+// 8. Validate a Gender Input (m/f)
+// Prompt: Enter "m" or "f" for gender.
+// Expected Output: Displays true if the input is either "m" or "f", otherwise false.
+// let re = /^(male|female)$/;
+// let gender=prompt("enter your gender");
+// document.write(re.test(gender));
+
+
+
+
+// .9 Validate a Date in YYYY-MM-DD Format
+// Prompt: Enter a date in the format YYYY-MM-DD.
+// Expected Output: Displays true if the date is in the correct format, otherwise false.
+// let re = /^\d{4}-\d{2}-\d{2}$/
+// let date=prompt("enter the date");
+// document.write(re.test(date));
+
+
+// 10. Validate a Postal Code (6-Digit Numeric Code)
+// Prompt: Enter a 6-digit postal code.
+// Expected Output: Displays true if the input is a valid 6-digit number, otherwise false.
+// let re = /^\d{6}$/
+// let code=prompt("enter 6 digit code");
+// document.write(re.test(code));
+
+
+// 11.  Validate a Username (Starts with a Letter and Can Include Numbers)
+// Prompt: Enter a username that starts with a letter and is 5-15 characters long, including letters and digits.
+// Expected Output: Displays true if the username meets the criteria, otherwise false.
+// let re = /^[a-zA-Z][a-zA-Z0-9]{4,14}$/;
+// let username=prompt("enter user name");
+// document.write(re.test(username));
+
+
+
+
+// 12. Validate a Password (At Least One Uppercase, One Lowercase, and One Digit)
+// Prompt: Enter a password that must be 8-15 characters long and include at least one uppercase letter, one lowercase letter, and one digit.
+// Expected Output: Displays true if the password is valid, otherwise false.
+// let re = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,15}$/;
+// let password=prompt("enter the password");
+// document.write(re.test(password));
+
+
+// 13.Validate a Vehicle Number Plate (Format: Two Letters Followed by Four Digits)
+// Prompt: Enter a vehicle number plate in the format "AA1234".
+// // Expected Output: Displays true if the number plate matches the format, otherwise false.
+// let re =/^[A-Z]{2}\d{4}$/;
+// let vehiclenumber=prompt("enter vehicle number");
+// document.write(re.test(vehiclenumber));
+
+
+
+
+// 14. Validate a Time Format (24-Hour Clock)
+// Prompt: Enter a time in the format HH
+// (24-hour format).
+// // Expected Output: Displays true if the time is in the correct format, otherwise false.
+// let re =  /^(?:[01]\d|2[0-3])$/;
+// let time=prompt("enter time");
+// document.write(re.test(time));
+
+
+
+// 15. Validate a Hexadecimal Color Code
+// Prompt: Enter a color code in the format "#RRGGBB".
+// Expected Output: Displays true if the input is a valid hexadecimal color code, otherwise false.
+// let re = /^#([A-Fa-f0-9]{6})$/;
+// let colorcode=prompt("enter colorcode");
+// document.write(re.test(colorcode));
+
+
+
+
+
+
+
+
+// </script>
+
+
+</body>
+</html>

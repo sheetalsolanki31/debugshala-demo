@@ -359,58 +359,515 @@
 // 70 > above Chemical enginnerring
 // 50 > Civil Engineering
 // default Bio technology
-let marks = prompt("enter your marks");
-let branch;
-switch(marks){
-    case marks >= 90 :
-        branch = "CS";
-        break;
-        case marks >= 80 :
-            branch = "Mechanical";
-            break;
-            case marks >= 70 :
-                branch = "Chemical";
-                break;
-                case marks >= 50 :
-                    branch = "Civil";
-                    break;
-                    default:
-                        branch  = "unknown branch";
-                                   
+        // let marks = prompt("enter your marks");
+        // let branch;
+        // switch (true) {
+        //     case (marks >= 90):
+        //     branch = "cs branch";
+        //     break;
+        //     case (marks >= 80):
+        //     branch = "mechanical branch";
+        //     break;
+        //     case (marks >= 70):
+        //     branch = "chemical engineering";
+        //     break;
+        //     case(marks >= 60):
+        //     branch = "civil engineering";
+        //     break;   
+        //     default:
+        //         branch = "bio technology";
+        
+        // }
+        // document.write("the branch of student is :" + branch);
 
-}
-document.write("student has" + marks + branch );
-// let day = prompt("enter day");
 
-// switch(day) {
-//   case 1:
-//     console.log("Sunday");
-//     break;
-//   case 2:
-//     console.log("Monday");
-//     break;
-//   case 3:
-//     console.log("Tuesday");
-//     break;
-//   case 4:
-//     console.log("Wednesday");
-//     break;
-//   case 5:
-//     console.log("Thursday");
-//     break;
-//   case 6:
-//     console.log("Friday");
-//     break;
-//   case 7:
-//     console.log("Saturday");
-//     break;
-//   default:
-//     console.log("Invalid day");
+
+        
+// 14.Write a code the outer if statement checks the weather variable. If it’s “sunny,” it further checks the temperature variable to determine the type of day it is (hot, warm, or cool). Depending on the values of weather and temperature, different messages will be logged to the html page .
+// let weather = "sunny";
+// let temperature = 55;
+// if(weather == "sunny"){
+//     if(temperature > 55){
+//         document.write("it is a hot sunny day");
+//     }else if(temperature = 55){
+//         document.write("it is warm sunny day");
+//     }else{
+//         document.write("it is a cold day");
+//     }
+// }else{
+//     document.write("it is not a sunny day");
 // }
 
 
 
 
+// 15.Check your bdate and take input from user as birthdate and print the exact age of user.
+// let birthyear = prompt("enter your birth year");
+// let age;
+// if(birthyear>0){
+//     age=24-birthyear;
+//     document.write(age);
+// }else{
+//     document.write("invalid year");
+// }
+
+
+// // 1. Find the output of the following :- 
+//         let x = 589;
+//         document.write(x+1 + "<br>");
+//         x += x;
+      
+// 	let y =2;
+// 	y *=x
+//         document.write(y);
+
+
+
+
+
+// 2. Find the output of the following :- 
+	//  let x = 234;
+    //      document.write(x--);
+    //      x /= x;
+    //      let z = 9;
+	//  z += x;
+    //      document.write(z);
+
+
+
+
+
+    
+// // 3. Find the output of the following :- 
+//  	let x = 5;
+//         document.write(x++);//5
+//         let z = 10;
+// 	z += x ** 2;
+//         document.write("</br>")
+//         document.write(z);
+
+
+
+
+// // 4. Find the output of the following :- 
+//         let x = 17;
+//         document.write(x++);
+//         let z = Math.pow(x,2);
+//         document.write("</br>")
+//         document.write(--z);
+
+
+
+
+
+// 5. Find the output of the following :-  
+    //     let x = 121;
+	// x *= 100 + 50 * 3;
+	// let z=123;
+	// z +=x;
+    //     document.write(Math.pow(z,2));
+
+
+
+
+    
+// // 6. Find the output of the following :- 
+//         let x = (999 + 67) * 3 + 2 / 2;
+//         document.write(x);
+
+
+
+
+
+// // 7. Find the output of the following :-  
+//      let c = 2789;
+//      document.write("c++"+(c++));
+//      document.write("</br>")
+
+//      document.write("++c"+(++c));
+//      document.write("</br>")
+
+//      document.write("c--"+(c--));
+//      document.write("</br>")
+
+//      document.write("--c"+(--c));
+//      document.write("</br>")
+
+
+
+
+
+
+// 8. Using Ternary operator take input from user and select tea or coffee , then according to user choice , print output in browser.
+// let input = prompt("enter your choice 'tea' or 'coffee'");
+// (input === tea)?document.write("you like tea"):document.write("you like coffee");
+
+
+
+
+// 9. What will be the output of the following code snippet? Explain why.
+// let a = 5;
+// let b = "5";
+// document.write(a == b); 
+// document.write(a != b);
+
+
+
+
+// 0. What will be the output of the following code snippet? Explain why.
+// let a = 7;
+// let b = "7";
+// document.write(a === b); 
+// document.write(a !== b); 
+
+
+
+
+// 11. What will be the output of the following code snippet?
+// javascript
+// Copy code
+// let x = 10;
+// let y = 20;
+// document.write(x > y); 
+// document.write(x < y); 
+
+
+// 12. What will be the output of the following code snippet?
+// javascript
+// // Copy code
+// let x = 15;
+// let y = 15;
+// document.write(x >= y); 
+// document.write(x <= y); 
+
+
+
+
+// 13. What will be the output of the following code snippet?
+// let p = 10;
+// let q = "20";
+// document.write(p < q); // Output=true
+// document.write(p > q); // Output=false
+
+
+
+// 14. What will be the output of the following code snippet?
+// let a = 15;
+// let b = 15;
+// let result = a === b ? "Equal" : "Not Equal";
+// document.write(result);output=equal
+
+
+
+
+// 15. Write a JavaScript code snippet that take 3 input value and store in identifier and compares three numbers x, y, and z and prints the greatest number using the ternary operator.
+// let x=prompt("enter 1st value");
+// let y=prompt("enter 2nd value");
+// let z=prompt("enter 3rd value");
+// (x>y&&x>z)?document.write(x):document.write(y);
+
+
+
+
+// 16. Write a JavaScript code snippet that take number from user using prompt(), if the input number n is even or odd using the ternary operator and prints "Even" or "Odd".
+// let n=prompt("enter a number");
+// n % 2 === 0 ? document.write("number is even") : document.write("number is odd");
+
+
+
+
+
+// 17. What will be the output of the following code snippet? Explain why.
+// let x = 5;
+// let y = 15;
+// document.write(x < y && x == 5); 
+// document.write(x > y && x == 5); 
+// document.write(x > y && x == 1); 
+
+
+
+
+
+// 18. What will be the output of the following code snippet? Explain why.
+// let x = 8;
+// let y = 12;
+// document.write(x < y || x == 8); 
+// document.write(x > y || x == 8); 
+// document.write(x > y || x == 2); 
+
+
+
+
+
+
+
+// // 19. What will be the output of the following code snippet? Explain why.
+// let z = 100;
+// document.write(z != 100); 
+// document.write(z != 50);  
+
+
+
+// 20. Suppose you are creating a login system. Write a JavaScript snippet that checks if the username and password are both correct. If both are correct, it should print "Login Successful"; otherwise, it should print "Login Failed". using if else condition.
+// const correctUsername = 'user123';
+// const correctPassword = 'pass456';
+// let username=prompt("enter your name");
+// let password=prompt("enter password");
+// if(username === correctUsername && password === correctPassword){
+//     document.write("login successfully");
+
+// }else{
+//     document.write("login failed");
+// }
+
+
+// // 21. You are offering a discount to customers who either have a membership card or whose total purchase amount is above $100. Write a JavaScript snippet that checks if a customer is eligible for a discount and prints "Discount Applied" or "No Discount".
+// const purchaseAmount='$100';
+// const membershipCard='yes';
+// let customerTotal='$100';
+// let customerMembership= 'yes';
+// if(customerTotal === purchaseAmount || customerMembership === membershipCard){
+//     document.write("Discount applied");
+// }else{
+//     document.write("No Discount");
+// }
+
+
+
+
+// 22. You are building a voting eligibility checker. Write a JavaScript snippet that checks if a person is eligible to vote. The person is eligible if they are above 18 years old and are a citizen of the country.
+// let age=prompt("enter your age");
+// if(age>=18){
+//     document.write("you are eligible for voting and your are citizen of the country");
+// }else{
+//     document.write("not eligible");
+// }
+
+
+
+
+
+// 24. A student can graduate if they have completed all required credits and their GPA is above 2.0. Write a JavaScript snippet that checks if a student meets these requirements and prints "Eligible to Graduate" or "Not Eligible to Graduate".
+// const minimumGPA=2.0;
+// const requiredCredit=120;
+// let gpa=prompt("enter your gpa");
+// let credit=prompt("enter your credit");
+// if(gpa > minimumGPA  && credit >= requiredCredit){
+//     document.write("ELigible to Graduate");
+// }else{
+//     document.write("not eligible");
+// }
+
+
+
+
+// // 25. Write a JavaScript program that prompts the user to enter a number and then checks if the number is positive, negative, or zero. Display an appropriate message for each case.
+// let n=prompt("enter a number");
+// if(n==0){
+//     document.write("number is equal to zero");
+// }else if(n>=1){
+//     document.write("number is positive");
+// }else{
+//     document.write("number is positive");
+// }
+
+
+
+
+// // 26. Write a JavaScript program that prompts the user to enter a number and checks if the number is even or odd. Display an appropriate message.
+// let n=prompt("enter a number");
+// if(n%2==0){
+//     document.write("number is even");
+// }else{
+//     document.write("number ids even");
+// }
+
+
+
+
+
+// 27. Write a JavaScript program that prompts the user to enter their age and checks if they are eligible to vote (age 18 and above). Display an appropriate message.
+
+
+
+
+// 28. Write a JavaScript program that prompts the user to enter their score and then checks the grade based on the score. Use the following grading criteria:
+// 90-100: A
+// 80-89: B
+// 70-79: C
+// 60-69: D
+// Below 60: F
+
+
+
+
+
+
+// 29. Write a JavaScript program that prompts the user to enter their age and checks if they are eligible to apply for a driving license (age 16 and above). Display an appropriate message.
+
+
+
+
+
+// 30. Write a JavaScript program that prompts the user to enter the total purchase amount and then calculates the discount based on the following criteria:
+// If the amount is greater than $100, a discount of 10% is applied.
+// If the amount is between $50 and $100, a discount of 5% is applied.
+// If the amount is less than $50, no discount is applied.
+// let Amount=prompt("enter amount");
+// // let discount;
+// if(Amount>=100){
+//     discount=100-10;
+//     document.write(discount);
+// }else if(Amount>=50 && Amount<100){
+//     discount=100-5;
+//     document.write(discount);
+// }else if(Amount<50){
+//     document.write("no discount is applied");
+     
+// }
+
+
+// // 31. Create a JavaScript snippet that prompts the user for the current temperature and displays a message based on the temperature range (e.g., "Cold" for below 15°C, "Warm" for 15-25°C, "Hot" for above 25°C).
+// let temperature = prompt("enter the current temperature");
+// if(temperature >= 25){
+//     document.write("weather is hot now");
+    
+// }else if(temperature >15 && temperature <25){
+//     document.write("weather is warm now");
+
+// }else if(temperature <=15 ){
+//     document.write("weather is cold now");
+// }
+
+// 32. Write a JavaScript program that prompts the user for the total purchase amount and calculates a discount based on the amount. If the amount is more than $100, give a 10% discount, otherwise give a 5% discount.
+// let amount=prompt("enter the amount")
+// let discount;
+// if(amount>=100){
+// discount=100-10;
+// document.write(discount);
+// }else {
+//     discount=100-5;
+//     document.write(discount);
+// }
+
+
+// // // 33. Write a JavaScript program that uses the switch statement to display the name of the day based on a given number (1 for Monday, 2 for Tuesday, ..., 7 for Sunday).
+// let num = 3;
+// let day;
+// switch(num) {
+//     case 1:
+//         day = "Monday";
+//         break;
+//         case 2:
+//             day = "Tuesday";
+//             case 3:
+//                 day = "Wednesday";
+//                 break;
+//                 case 4:
+//                     day = "Thursday";
+//                     break;
+//                     case 5:
+//                         day = "Friday";
+//                         break;
+//                         case 6:
+//                         day = "Saturday";
+//                         break;
+//                         case 7:
+//                             day = "Sunday";
+//                             break;
+//                             default:
+//                                 day = "invalid";
+// }
+// document.write(day);
+
+
+
+
+
+
+// 34. Create a JavaScript program that uses the switch statement to assign a grade based on a given score (A for 90-100, B for 80-89, C for 70-79, D for 60-69, F for below 60).
+
+
+
+
+
+// 35. Write a JavaScript program that uses the switch statement to display the season based on the given month (e.g., "January" -> "Winter", "April" -> "Spring").
+
+
+
+// 36. Implement a simple calculator using the switch statement that performs addition, subtraction, multiplication, or division based on user input two values.
+// let a=prompt("enter a number ");
+// let b=prompt("enter second number");
+// let calculation=prompt("which calc you want to apply on this number");
+// let c;
+// switch(calculation){
+//     case "addition":
+//         c = a + b;
+//         break;
+//         case "subtraction":
+//             c = a - b;
+//             break;
+//             case "multiplication":
+//                 c = a * b;
+//                 break;
+//                 case "division":
+//                     c=a / b;
+//                     break;
+//                     default:
+//                         c="invalid cal" 
+
+// }
+// document.write(c);
+
+
+// Given input values and operation
+let num1 = 10; // Replace with the first value
+let num2 = 5;  // Replace with the second value
+let operation = "+"; // Replace with the desired operation: "+", "-", "*", "/"
+
+// Perform the calculation based on the operation
+// let result;
+
+// switch(operation) {
+//     case "+":
+//         result = num1 + num2;
+//         break;
+//     case "-":
+//         result = num1 - num2;
+//         break;
+//     case "*":
+//         result = num1 * num2;
+//         break;
+//     case "/":
+//         // Check if the second number is not zero to avoid division by zero
+//         if (num2 !== 0) {
+//             result = num1 / num2;
+//         } else {
+//             result = "Error: Division by zero is not allowed.";
+//         }
+//         break;
+//     default:
+//         result = "Invalid operation. Please use +, -, *, or /.";
+// }
+
+// // Display the result
+// console.log(`The result of ${num1} ${operation} ${num2} is: ${result}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </script>
 </body>
 </html>
